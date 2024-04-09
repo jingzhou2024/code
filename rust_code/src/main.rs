@@ -1,6 +1,8 @@
 mod display_use;
 mod list_display_use;
 mod format_use;
+mod tuple_use;
+mod list_use;
 
 use log::debug;
 
@@ -57,5 +59,7 @@ fn beautiful_use() {
 fn main() {
     // println!("{:#?}", display_use::Stru(3));
     // list_display_use::list_display_use();
-    format_use::format_use();
+    // format_use::format_use();
+    // tuple_use::tuple_use();
+    list_use::list_use();
 }

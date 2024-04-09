@@ -28,6 +28,17 @@ struct Color {
     blue: u8,
 }
 
+impl Display for Color {
+    // `f` 是一个缓冲区（buffer），此方法必须将格式化后的字符串写入其中
+    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+
+        // `write!` 和 `format!` 类似，但它会将格式化后的字符串写入
+        // 一个缓冲区（即第一个参数f）中。
+        write!(f, "0x{:02x}{:02x}{:02x}",
+               self.red, self.green, self.blue)
+    }
+}
+
 pub fn format_use() {
     for city in [
         City { name: "Dublin", lat: 53.347778, lon: -6.259722 },
@@ -42,6 +53,6 @@ pub fn format_use() {
         Color { red: 0, green: 0, blue: 0 },
     ].iter() {
         // 在添加了针对 fmt::Display 的实现后，请改用 {} 检验效果。
-        println!("{:?}", *color)
+        println!("{}", *color)
     }
 }
