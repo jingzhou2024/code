@@ -29,7 +29,7 @@ curl https://sh.rustup.rs -sSf | sh
 rustup install nightly
 # 切换工具链, 切换后cargo, rustc都变成这个版本
 rustup default nightly 
-
+rustup install nightly-gnu
 # 查看工具链
 rustup toolchain list
 ```
@@ -151,3 +151,20 @@ rustup show
 rustup which cargo
 
 ```
+
+# clion配置
+
+## 工具链
+添加WSL, toolset 会自动识别到WSL, 如果没有识别到说明WSL有问题， 去github 重新装
+![img_3.png](img_3.png)
+* 红框是debugger的设置
+## debugger配置
+![img_2.png](img_2.png)
+## 工具链， 标准库位置配置
+![img_4.png](img_4.png)
+
+## 执行环境配置
+必须要创建WSL
+![img_1.png](img_1.png)
+但是项目选择还是local machine
+![img.png](img.png)

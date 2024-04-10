@@ -15,4 +15,3 @@ github
 -> settings 
 -> SSH and GPG keys
 -> New SSH key
-

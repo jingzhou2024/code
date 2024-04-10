@@ -3,18 +3,17 @@
   <component name="RemoteTargetsManager">
     <option name="projectDefaultTargetUuid" value="0148714d-4ca9-45b2-b2c1-49e1692cd4e4" />
     <targets>
-      <target name="idea@localhost:2222" type="ssh/sftp" uuid="0148714d-4ca9-45b2-b2c1-49e1692cd4e4">
+      <target name="idea@192.168.10.100:22" type="ssh/sftp" uuid="c5656839-fe3f-4a8a-b1b7-ff098fa6c83b">
         <config>
-          <option name="projectRootOnTarget" value="/home/idea/os_code/rust-rustlings-2024-spring-jingzhou2024" />
-          <option name="serverName" value="idea@localhost:2222 password" />
+          <option name="projectRootOnTarget" value="/home/idea/code" />
+          <option name="serverName" value="idea@192.168.10.100:22 password" />
         </config>
         <ContributedStateBase type="RsLanguageRuntime">
           <config>
             <option name="cargoPath" value="/home/idea/.cargo/bin/cargo" />
-            <option name="cargoVersion" value="warning: `/home/idea/.cargo/config` is deprecated in favor of `config.toml`" />
-            <option name="localBuildArgs" value="run" />
+            <option name="cargoVersion" value="1.77.1 (e52e36006 2024-03-26)" />
             <option name="rustcPath" value="/home/idea/.cargo/bin/rustc" />
-            <option name="rustcVersion" value="1.79.0-nightly (9d5cdf75a 2024-04-07)" />
+            <option name="rustcVersion" value="1.77.1 (7cf61ebde 2024-03-27)" />
           </config>
         </ContributedStateBase>
       </target>
